@@ -1,0 +1,9 @@
+.active-date {
+    @apply border-none bg-[#E9EC67];
+}
+
+.card-hover:hover{
+    transform: scale(1.07);
+    transition:0.3s ease-in;
+    transition-delay: 0.1s;
+}
