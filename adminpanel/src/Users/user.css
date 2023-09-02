@@ -1,0 +1,31 @@
+/* .search-box{
+    position: relative;
+}
+
+.search-box::placeholder{
+    position: absolute;
+    left: 1rem;   
+} */
+
+.search-input-container{
+    position: relative;
+
+}
+
+.search-input-container i{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    font-size: 1.5rem;
+}
+
+.search-input-container .search-box{
+    padding-left:2rem ;
+}
+
+.search-input-container .search-box::placeholder{
+    padding: 1rem;
+    position: absolute;
+    left: 2rem;    
+}
+

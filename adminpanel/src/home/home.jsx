@@ -23,7 +23,7 @@ function Home() {
           Good evening <span className="font-medium ">Sculbio</span>
         </h2>
       </div>
-      <div className="text-white md:relative sm:hidden md:block">
+      <div className="text-white md:relative 2sm:hidden md:block">
         <button>
           <i className="las la-shopping-cart absolute 2xl:left-5 xl:top-[300px] text-4xl md:right-2 md:-top-16 xl:right-auto xl:left-0 2sm:bottom-0"></i>
         </button>
@@ -31,7 +31,7 @@ function Home() {
           <i className="las la-home absolute 2xl:left-5 xl:top-[250px] text-4xl md:right-14 md:-top-16 xl:right-auto xl:left-0 2sm:bottom-0"></i>
         </button>
       </div>
-      <div className="2xl:px-24 xl:px-14 grid md:grid-cols-2 lg:grid-cols-3 gap-10 2sm:col-span-1 sm:ml-32 md:ml-0">
+      <div className="2xl:px-24 xl:px-14 grid md:grid-cols-2 lg:grid-cols-3 gap-10 2sm:col-span-1 sm:ml-32 2sm:px-14 md:ml-0">
         <div className=" text-white max-h-80 w-80 rounded-lg gap-10">
           <div className="bg-[#535353] h-[47%] rounded-lg px-4 py-2 card-hover">
             <div className="flex">
@@ -146,7 +146,7 @@ function Home() {
                 <h4 className="text-3xl ">{day}</h4>
               </div>
               <div className="border rounded-lg py-4 px-4 text-xl mx-4">
-                <span>{week[weekday + 1]}</span>
+              <span>{week ? week[weekday + 1] : week[0]}</span>
                 <h4 className="text-3xl ">{day + 1}</h4>
               </div>
             </div>

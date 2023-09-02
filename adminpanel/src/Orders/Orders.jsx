@@ -8,21 +8,21 @@ function Orders() {
       <section>
         <div className=" flex">
           <img src="/img/Ellipse-1.png" alt="statue" />
-          <div className="">
+          <Link to="/" className="">
           <i className="las la-long-arrow-alt-left text-7xl absolute right-10"></i>
-        </div>
+        </Link>
         </div>
 
         <div className="ml-32">
           <span className=" text-xl font-normal">Orders</span>
           <h2 className=" text-[80px] font-medium">41l</h2>
         </div>
-          <div className="text-white md:relative">
+          <div className="text-white md:relative md:block  2sm:hidden">
             <button>
-              <i className="las la-shopping-cart absolute 2xl:left-5 xl:top-[300px] text-4xl md:right-2 md:-top-16 xl:right-auto xl:left-0 2sm:bottom-0"></i>
+              <i className="las la-shopping-cart absolute 2xl:left-5 md:top-[300px] text-4xl md:right-auto md:left-0 2sm:bottom-0"></i>
             </button>
             <button>
-              <i className="las la-home absolute 2xl:left-5 xl:top-[250px] text-4xl md:right-14 md:-top-16 xl:right-auto xl:left-0 2sm:bottom-0"></i>
+              <i className="las la-home absolute 2xl:left-5 md:top-[250px] text-4xl md:right-auto md:left-0 2sm:bottom-0"></i>
             </button>
           </div>
 
@@ -42,13 +42,21 @@ function Orders() {
           </div>
         </div>
       </section>
+      <div className="flex items-center justify-center mt-5 bg-[#434343] w-full text-center mx-auto text-white md:hidden sticky bottom-0">
+        <button>
+          <i className="las la-shopping-cart text-4xl mx-2"></i>
+        </button>
+        <button>
+          <i className="las la-home text-4xl mx-2"></i>
+        </button>
+      </div>
     </section>
   );
 }
 const ListStyle = (props) => {
   const { username, password, date, CartCode, confirm , id} = props;
   return (
-    <div className="flex my-5 ml-24 border-b border-[#808080] pb-4 text-xl">
+    <div className="flex my-5 ml-24 border-b border-[#808080] pb-4 text-xl w-max">
       <h3 className="text-xl mx-16">{username}</h3>
       <h3 className="text-xl mx-16">{date}</h3>
       <h3 className="text-xl mx-16">{CartCode}</h3>
